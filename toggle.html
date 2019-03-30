@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TOGGLE KRY</title>
+	<style type="text/css">
+	body{background-color:#f4f9fe;}
+	#key{
+				width: 150px;
+				height: 40px;
+				line-height: 40px;
+				border:0;
+				border-radius: 30px;
+				background-color:#0c5eb5;
+				color: white;
+				box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+				margin-top: 10px;}	
+
+	</style>
 </head>
-<body style="background-color: #0066ff">
-
-
-	<input type="button" value="off" id="key" onclick="d()">
+<body>
+	<center>
+		<input type="button" value="OFF" id="key" onclick="d()">
+		 <br><br>
+		<form name="ss"><input name="aa" disabled=""></form>
+	</center>
 <script type="text/javascript">
 	var  s= false;
-	function d(){if (s){ key.value="off"; document.ss.aa.value+="wow "; s=false;}
-				else{key.value="on"; s=true;}	}
+	function d(){if (s){ key.value="OFF"; document.ss.aa.value+="wow "; s=false;}
+				else{key.value="ON"; s=true;}	}
 				document.ss.aa.value=" ";
-</script> <br><br>
-<form name="ss"><input name="aa" disabled=""></form>
+</script>
 </body>
 </html>
