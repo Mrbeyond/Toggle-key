@@ -7,6 +7,32 @@
 	<style type="text/css">
 	body{background-color:#f4f9fe;}
 	#key{
+				width: 100px;
+				height: 30px;
+				line-height: 30px;
+				border:0;
+				border-radius: 30px;
+				background-color:#0c5eb5;
+				color: white;
+				box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+				margin-top: 10px;}
+	input{max-width: 300px;
+			margin: auto;
+			height: 30px;
+			border-radius: 20px;
+			line-height: 30px;
+			font-family: century gothic;
+			background-color: #f4f9fe; 	}
+	h3{color: #0c5eb5;}	
+	@media screen and (min-width: 768px){
+			form>input{width: 300px;
+			height: 30px;
+			border-radius: 20px;
+			line-height: 30px;
+			font-size: 120%;
+			font-family: century gothic;
+			background-color: #f4f9fe; 	}
+		#key{
 				width: 150px;
 				height: 30px;
 				line-height: 30px;
@@ -15,12 +41,14 @@
 				background-color:#0c5eb5;
 				color: white;
 				box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
-				margin-top: 10px;}	
+				margin-top: 10px;}
+		}
 
 	</style>
 </head>
 <body>
 	<center>
+		<h3>SIMPLE TOGGLE KEY</h3>
 		<input type="button" value="OFF" id="key" onclick="d()">
 		 <br><br>
 		<form name="ss"><input name="aa" disabled=""></form>
